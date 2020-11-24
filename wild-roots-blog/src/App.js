@@ -1,5 +1,9 @@
 import React from 'react';
-import Navigation from './components/navigation';
+import './App.css';
+import './assets/Navigation.css';
+import Navigation from './components/Navigation.js';
+import Axios from 'axios';
+
 
 
 /* import './App.css'; */
