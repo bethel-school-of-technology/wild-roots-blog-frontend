@@ -4,8 +4,6 @@ import './index.css';
 import App from './App.js';
 import reportWebVitals from './reportWebVitals';
 
-import './components/Navigation.js';
-import './assets/Navigation.css';
 
 
 

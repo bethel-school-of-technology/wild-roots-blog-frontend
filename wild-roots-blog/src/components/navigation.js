@@ -24,7 +24,7 @@ const navLinks = [
 export default function Navigation () {
     return(<nav className="site-navigation">
         <span>Wild Roots Blog</span>
-        <ul>
+        <ul id='dots'>
             { navLinks.map((link, index) => (
                 <li key={index}>
                     {link.title}
