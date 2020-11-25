@@ -40,6 +40,7 @@ function App() {
           </Route>
           <Route path="/login">
           <Navigation/>
+          <Login/>
             <h1>Login page</h1>
           </Route>
           {/* Makes sure default route is always at the bottom

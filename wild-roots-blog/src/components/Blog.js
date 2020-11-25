@@ -4,7 +4,7 @@ import '../assets/Blog.css';
 function Blog() {
     return (
         <div>
-           This is the blog page 
+           <h1>This is the blog page assigned to Chris</h1>
         </div>
     )
 }
