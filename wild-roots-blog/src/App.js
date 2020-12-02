@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import Navigation from './components/Navigation.js';
+import Navigation from './components/navigation.js';
 import Home from './components/Home';
 import Blog from './components/Blog.js';
 import Contact from './components/Contact.js';
@@ -66,11 +66,11 @@ function App() {
       method: "POST",
       body: JSON.stringify({product, price})
     })   
+    let newCustomer = await newOrderData.json();
+  
+    console.log(newCustomer);
   }
 
-  let newCustomer = await newCustomerData.json();
-
-  console.log(newCustomer);
 
 // fix this 
   return (
@@ -89,6 +89,7 @@ function App() {
           </div>
         )
       })}
+      <Contact />
     </div>
 
     /*//BEM
