@@ -7,6 +7,10 @@ const navLinks = [
         path: '/'
     },
     {
+        title: 'Customers',
+        path: '/customers'
+    },
+    {
         title: 'Blog',
         path: '/blog'
     },
