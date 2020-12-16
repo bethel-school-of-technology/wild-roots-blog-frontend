@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/Customers.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import Axios from 'axios';
 
   
   
@@ -10,11 +11,16 @@ import { useState } from 'react';
 
 
 function Customers() {
+    var [isEdit, setIsEdit] = useState("");
+    var [customers, setCustomers] = useState([]);
+    var [customer, setCustomer] = useState([]);
+
+
 // state value and a function to set that value    
     var [customer, setCustomer] = useState({});
-        var [address, setAddress] = useState({});
-        var [product, setProduct] = useState("");
-        var [price, setPrice] = useState(-1);
+    var [address, setAddress] = useState({});
+    var [product, setProduct] = useState("");
+    var [price, setPrice] = useState(-1);
     
 
     const handleSubmit = async (e) => {
@@ -27,6 +33,19 @@ function Customers() {
     
         console.log(newCustomer);
     }
+// front-end consuming the back end and  pulling in data.
+    useEffect(() => {
+        const getAllCustomers = async () => {
+          let customersData = await fetch("http://localhost:3000/customers/")
+          let c = await customersData.json();
+    
+          /* console.log(c); */
+    
+          setCustomers(c.data.customers)
+        }
+    
+        getAllCustomers();
+      }, [])
 
 
     return (
