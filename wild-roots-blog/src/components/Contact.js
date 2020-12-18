@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/Contact.css';
-import axios from 'axios'
+import axios from 'axios';
 
 <h1>Contact Us</h1>
 
@@ -67,8 +67,8 @@ class Contact extends React.Component {
     this.setState({message: event.target.value})
   }
 
-  handleSubmit(event) {
-  }
+  // handleSubmit(event) {
+  // }
 }
 
 export default Contact;
