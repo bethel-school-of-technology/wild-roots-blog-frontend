@@ -21,6 +21,10 @@ const navLinks = [
         path: '/blog'
     },
     {
+        title: <Link to='/scripture'>Scripture</Link>,
+        path: '/scripture'
+    },
+    {
         title: <Link to="/contact-us">Contact Us</Link>,
         path: '/contact-us'
     },
@@ -39,10 +43,9 @@ export default function Navigation () {
             { navLinks.map((link, index) => (
                 <li key={index}>
                     {link.title}
-
                 </li>
             ))}
-        </ul>
-
-        </nav>)
+            </ul>
+        </nav>
+    )
 }

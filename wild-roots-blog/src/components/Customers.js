@@ -1,13 +1,6 @@
 import React from 'react';
 import '../assets/Customers.css';
 import { useState, useEffect } from 'react';
-import Axios from 'axios';
-
-  
-  
-  
-    
-
 
 
 function Customers() {
@@ -60,12 +53,13 @@ function Customers() {
                 <input type="text" onChange={e => setPrice(e.target.value)} />
                 <input type="submit" />
             </form>
+            {/* /* customers.map((customer, idx ) => (
+                            key={idx}>
+                                {price}
+            ) */ }
         </div>
-    )}
+    )
+}
 
 export default Customers
 
-{/* /* customers.map((customer, idx ) => (
-                key={idx}>
-                    {price}
-) */ }
