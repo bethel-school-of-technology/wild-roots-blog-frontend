@@ -1,7 +1,5 @@
 import React from 'react';
-import '../assets/Customers.css';
 import { useState, useEffect } from 'react';
-
 
 function Customers() {
     var [isEdit, setIsEdit] = useState("");

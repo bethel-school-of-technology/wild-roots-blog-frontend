@@ -3,9 +3,9 @@ import '../assets/Home.css';
 
 function Home() {
     return (
-        <div>
-            <p> Text goes here</p>
-                    </div>
+        <div className="home">
+            <h1>Jesus Saves & This is the Home Page Assined to Chris</h1>
+        </div>
     )
 }
 
