@@ -1,14 +1,5 @@
 import React from 'react';
-import '../assets/Customers.css';
 import { useState, useEffect } from 'react';
-import Axios from 'axios';
-
-  
-  
-  
-    
-
-
 
 function Customers() {
     var [isEdit, setIsEdit] = useState("");

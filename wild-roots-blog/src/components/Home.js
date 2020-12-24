@@ -3,8 +3,8 @@ import '../assets/Home.css';
 
 function Home() {
     return (
-        <div>
-            <p>Jesus Saves & This is the Home Page Assined to Chris</p>
+        <div className="home">
+            <h1>Jesus Saves & This is the Home Page Assined to Chris</h1>
         </div>
     )
 }
