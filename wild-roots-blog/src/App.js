@@ -47,7 +47,6 @@ function App() {
           <Route path="/contact-us">
             <Navigation/>
             <Contact/>
-            <h1>contact Page</h1>
           </Route>
           <Route path="/login">
             <Navigation/>

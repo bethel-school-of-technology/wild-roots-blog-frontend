@@ -2,7 +2,6 @@ import React from 'react';
 import '../assets/Contact.css';
 import axios from 'axios';
 
-
 class Contact extends React.Component {
     constructor(props){
         super(props);
@@ -17,7 +16,7 @@ class Contact extends React.Component {
         e.preventDefault();
         axios({
           method: "POST", 
-          url:"http://localhost:3000/send", 
+          url:"http://localhost:3000/contact/send", 
           data:  this.state
         }).then((response)=>{
           if (response.data.status === 'success') {
@@ -34,21 +33,26 @@ class Contact extends React.Component {
       
       render() {
         return(
-          <div className="App">
-            <h1>Contact Us Assigned to Sonya Styles!</h1>
+          <div className="Contact-App">
+            <h1>Contact Us!</h1>
+            <p>If you would like to contact us for any reason at all, please fill out the form below.<br></br>Someone will get back to you within 3 buisness days</p>
+            <br></br>
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
               <div className="form-group">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Name </label>
                 <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
               </div>
+              <br></br>
               <div className="form-group">
-                <label htmlFor="inputEmail">Email address</label>
+                <label htmlFor="inputEmail">Email </label>
                 <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
               </div>
+              <br></br>
               <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">Message </label>
                 <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
               </div>
+              <br></br>
               <button type="submit" className="btn btn-primary">Submit</button>
             </form>
           </div>
