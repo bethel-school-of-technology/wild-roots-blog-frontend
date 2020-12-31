@@ -3,8 +3,8 @@ import '../assets/Login.css';
 
 function Login() {
     return (
-        <div>
-            Assigned to Israel
+        <div className="login">
+            <h1>Login page</h1>
         </div>
     )
 }

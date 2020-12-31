@@ -1,10 +1,22 @@
-.site-navigation {
-    background-color: burlywood;
-    color: blue;
+.navigation {
+    display: flex;
+    background-image: url("http://ujspaceainfo.com/wp-content/uploads/2014/01/Kansas-wildflowers.jpg");
+    color: #776699;
     position: sticky;
+    height: 200px;
     
 }
 
 #dots {
     list-style-type: none;
+}
+
+.navigation__list {
+    flex: 1;
+    
+}
+
+.navigation__list > ul {
+    display: flex;
+    justify-content: space-evenly;
 }

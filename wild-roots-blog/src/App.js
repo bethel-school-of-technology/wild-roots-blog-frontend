@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
 import Navigation from './components/Navigation';
+
 import Home from './components/Home';
-import About from './components/About';
-import Blog from './components/Blog';
+import Gardening from './components/Gardening';
+import Cooking from './components/Cooking';
+import LocalBusiness from './components/LocalBusiness';
+import Scripture from './components/Scripture';
 import Contact from './components/Contact';
 import Login from './components/Login';
-import Customers from './components/Customers';
-import Scripture from './components/Scripture';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,49 +16,38 @@ import {
 } from "react-router-dom";
 
 function App() {
-
   return (
     //BEM
     <Router>
-      <div className="App">
-        <Switch>
-          <Route exact path="/">
-            <Navigation/>
-              <h1>Default Home Page</h1>
-          </Route>
-          <Route path="/home">
-            <Navigation/>
-            <Home/>
-            <h1>I am a Home page welcome home!</h1>
-          </Route>
-          <Route path="/about">
-            <Navigation/>
-            <About/>
-          </Route>
-          <Route path="/blog">
-            <Navigation/>
-            <Blog/>
-            <h1>I am a Blog Page can't wait to hear your stories!</h1>
-          </Route>
-          <Route path="/scripture">
-            <Navigation/>
-            <Scripture/>
-            <h1>Scripture Page</h1>
-          </Route>
-          <Route path="/contact-us">
-            <Navigation/>
-            <Contact/>
-          </Route>
-          <Route path="/login">
-            <Navigation/>
-            <Login/>
-            <h1>Login page</h1>
-          </Route>
-          <Route path="/customers">
-            <Navigation/>
-            <Customers/>
-          </Route>
-        </Switch>
+      <div className="app">
+        <div>
+          <Navigation />
+        </div>
+        <div className="app__body">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/gardening">
+              <Gardening />
+            </Route>
+            <Route path="/cooking">
+              <Cooking />
+            </Route>
+            <Route path="/local-business">
+              <LocalBusiness />
+            </Route>
+            <Route path="/scripture">
+              <Scripture />
+            </Route>
+            <Route path="/contact">
+              <Contact/>
+            </Route>
+            <Route path="/login">
+              <Login/>
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
         );
@@ -65,7 +55,3 @@ function App() {
 
 export default App;
 
-          
-          
-
-    
