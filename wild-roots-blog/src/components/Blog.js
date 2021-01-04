@@ -4,7 +4,8 @@ import '../assets/Blog.css';
 function Blog() {
     return (
         <div>
-           <h1>Lord! Help Me! I need to understand this!!</h1>
+        <h3>The Wild Roots Blog - A Williams County Community Blog</h3>
+           
         </div>
     )
 }
