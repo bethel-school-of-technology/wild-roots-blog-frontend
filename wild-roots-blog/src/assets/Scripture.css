@@ -1,4 +1,19 @@
-.Scripture  {
-    display: flex;
+.scripture  {
+    background-color: rgb(71, 245, 71);
 
 }
+
+.scripture-card {
+    background-color: darkgoldenrod;
+    color: antiquewhite;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+h1 {
+    padding: 20px;
+    }
