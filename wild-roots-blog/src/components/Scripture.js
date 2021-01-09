@@ -12,7 +12,7 @@ import verses from "../assets/verses"
 function Scripture() {
     return (
         <div className="scripture">
-            <h1>The Way the Truth the Light</h1>
+            <h1>Jesus Christ is the same yesterday, today, and forever</h1>
             <div className="cards-container">
                 <Card scriptureVerse={verses[0]}/> 
                 <Card scriptureVerse={verses[1]}/> 

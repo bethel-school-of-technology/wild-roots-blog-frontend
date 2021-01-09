@@ -1,18 +1,19 @@
 .scripture  {
-    background-color: rgb(71, 245, 71);
+    background-color: gold
 
 }
 
 .scripture-card {
-    background-color: darkgoldenrod;
-    color: antiquewhite;
-    width: 300px;
+    background-color: green;
+    color: black;
+    width: 250px;
     padding: 20px;
     margin: 10px;
 }
 .cards-container {
     display: flex;
     flex-wrap: wrap;
+    border: .5;
 }
 h1 {
     padding: 20px;
