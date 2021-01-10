@@ -18,6 +18,10 @@ const vs=[
     {
         reference: "Colossians 3:17",
         verse: "And whatever you do in word or deed, do all in the name of the Lord Jesus, giving thanks to God the Father through Him."
+    },
+    {
+        reference: "Philippians 4:13",
+        verse: "I can do all things John 15:5through Christ who strengthens me."
     }
 ]
 export default vs

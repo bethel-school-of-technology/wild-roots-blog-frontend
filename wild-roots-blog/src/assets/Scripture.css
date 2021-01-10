@@ -1,8 +1,12 @@
 .scripture  {
     background-color: gold
-
 }
+.scripture__title {
+    display: flex;
+    text-align: center;
 
+ 
+}
 .scripture-card {
     background-color: green;
     color: black;
@@ -10,11 +14,19 @@
     padding: 20px;
     margin: 10px;
 }
+
+.scripture-card > p {
+    color: white;
+}
+
 .cards-container {
     display: flex;
+    text-align: center;
+    justify-content: center;
     flex-wrap: wrap;
     border: .5;
 }
+
 h1 {
     padding: 20px;
     }
