@@ -47,4 +47,9 @@
     display: flex;
     justify-content: flex-end;
     padding: 10px 10px 0px 0px;
+    /* text-decoration: none !important; */
+}
+
+.sendRecipieBtn > button {
+    text-decoration: none !important;
 }

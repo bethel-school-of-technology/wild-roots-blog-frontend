@@ -10,6 +10,7 @@ import LocalBusiness from './components/LocalBusiness';
 import Scripture from './components/Scripture';
 import Contact from './components/Contact';
 import Login from './components/Login';
+// import Recipie from './components/Recipie';
 import {
   BrowserRouter as Router,
   Switch,
@@ -36,7 +37,7 @@ function App() {
             <Route path="/cooking">
               <Cooking />
             </Route>
-            <Route path="/recipie">
+            <Route path="/recipies">
               <Recipie />
             </Route>
             <Route path="/local-business">
