@@ -1,4 +1,5 @@
 import React from 'react';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navigation from './components/Navigation';
 
@@ -14,6 +15,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Recipie from './components/Recipie';
 
 function App() {
   return (
@@ -33,6 +35,9 @@ function App() {
             </Route>
             <Route path="/cooking">
               <Cooking />
+            </Route>
+            <Route path="/recipie">
+              <Recipie />
             </Route>
             <Route path="/local-business">
               <LocalBusiness />
