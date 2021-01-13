@@ -30,7 +30,7 @@ import Recipie from './Recipie';
 
 
 
-const useStyles = makeStyles((theme) => ({
+export const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 345,
       margin: 20,
@@ -119,15 +119,15 @@ function Cooking() {
 
     return (
         <>  
-                <div className="sendRecipieBtn">
-                            <Link to='/recipies'>
-                                <Button 
-                                    className={classes.button}
-                                    variant='outlined' 
-                                >Click me to Share a Recipie
-                                </Button>
-                            </Link>
-                </div>
+            <div className="sendRecipieBtn">
+                <Link to='/recipies'>
+                    <Button 
+                        className={classes.button}
+                        variant='outlined' 
+                    >Click me to Share a Recipie
+                    </Button>
+                </Link>
+            </div>
         {/* Recipie Cards */}
             <div className="cooking__cards"> 
             {/* ///////card 1 */}

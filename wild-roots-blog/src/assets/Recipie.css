@@ -1,4 +1,41 @@
 .recipie {
+
     display: flex;
     justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    /* align-items: center; */
+    /* background-color: whitesmoke; */
+}
+
+#form__contact {
+    position: absolute;
+}
+
+
+.recipie > h1 {
+    color: gray;
+}
+
+.recipie__form {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.recipie__form > form {
+    display: grid;
+}
+
+.recipe__Button {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 2px solid green;
 }
