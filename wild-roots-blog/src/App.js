@@ -1,4 +1,5 @@
 import React from 'react';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navigation from './components/Navigation';
 
@@ -9,11 +10,13 @@ import LocalBusiness from './components/LocalBusiness';
 import Scripture from './components/Scripture';
 import Contact from './components/Contact';
 import Login from './components/Login';
+// import Recipie from './components/Recipie';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import Recipie from './components/Recipie';
 
 function App() {
   return (
@@ -33,6 +36,9 @@ function App() {
             </Route>
             <Route path="/cooking">
               <Cooking />
+            </Route>
+            <Route path="/recipies">
+              <Recipie />
             </Route>
             <Route path="/local-business">
               <LocalBusiness />

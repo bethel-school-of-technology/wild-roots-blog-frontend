@@ -39,7 +39,7 @@ class Contact extends React.Component {
             <br></br>
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
               <div className="form-group">
-                <label htmlFor="name">Name </label>
+                <label htmlFor="name">Name</label>
                 <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
               </div>
               <br></br>
