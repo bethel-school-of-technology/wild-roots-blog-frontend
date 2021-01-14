@@ -87,7 +87,6 @@ function App() {
             <Route path="/contact">
               <Contact/>
             </Route>
-            
           </Switch>
         </div>
       </div>
