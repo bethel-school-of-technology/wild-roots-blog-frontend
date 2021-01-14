@@ -1,0 +1,24 @@
+.store {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around; 
+    font-size: x-large;
+    font-weight: bolder; 
+    background-color: rgb(252, 243, 237);
+}
+.two{
+    background-color: rgb(58, 119, 34)
+}
+.local {
+ justify-content: center;
+ font-size: x-large;
+ font-weight: bold;
+ font-style: italic;
+ color: rgb(15, 90, 100);
+}
+li {
+    list-style: none;
+    color: rgb(209, 138, 71)
+    
+}

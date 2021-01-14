@@ -30,7 +30,7 @@ const navLinks = [
     {
         title: <Link to="/login">Login</Link>,
         path: '/login'
-    }
+    },
 ];
 
 export default function Navigation () {
