@@ -1,20 +1,71 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../assets/Scripture.css';
 import Card from "./Card";
-import verses from "./verses"
+import {Form, Row, Col, Button} from "react-bootstrap";
+import axios from "axios"
+// import verses from "./verses"
 
 function Scripture() {
+    const [verses, setVerses] = useState([]) 
+    const [reference, setReference] = useState("") 
+    const [verse, setVerse] = useState("")
+    useEffect(()=> {
+        const getScripture = async () => {
+            const {data}=await axios.get("http://localhost:3001/scripture")
+            
+            console.log(data.data.results)
+            setVerses(data.data.results)
+            
+        }
+        getScripture()
+
+    },[])  
+    
+    const handleClick= async() => {
+        console.log({reference, verse})
+        const {data}=await axios.post("http://localhost:3001/scripture/add",{reference, verse}) 
+        console.log(data,"new scripture added")   
+    }
+
     return (
         <div className="scripture">
             <h1 className="scripture__title">Jesus Christ is the same yesterday, today, and forever</h1>
+
             <div className="cards-container">
-                <Card scriptureVerse={verses[0]}/> 
-                <Card scriptureVerse={verses[1]}/> 
-                <Card scriptureVerse={verses[2]}/> 
-                <Card scriptureVerse={verses[3]}/> 
-                <Card scriptureVerse={verses[4]}/>
-                <Card scriptureVerse={verses[5]}/>
+            {verses.map(verse => (
+                <Card scriptureVerse={verse}/>
+            ))}
+ 
             </div>
+            
+            <Form className="scriptureForm">
+            <h2>Add a new verse</h2>
+                <Form.Group as={Row}>
+                    <Form.Label column sm="2">
+                        Reference
+                    </Form.Label>
+                    <Col sm= "10">
+                    <Form.Control 
+                        type="text" 
+                        value={reference}
+                        onChange={(event)=> setReference(event.target.value)}    
+                    />
+                    </Col>
+                </Form.Group>
+                <Form.Group as={Row}>
+                    <Form.Label column sm="2">
+                        Verse
+                    </Form.Label>
+                    <Col sm= "10">
+                    <Form.Control 
+                        type="text" 
+                        value={verse}
+                        onChange={(event)=> setVerse(event.target.value)} 
+                    />
+                    </Col>
+                </Form.Group>
+                <Button onClick={handleClick}>Add</Button>
+            </Form>
         </div>
     )
 }
