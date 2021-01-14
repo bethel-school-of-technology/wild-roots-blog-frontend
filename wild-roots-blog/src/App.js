@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import './App.css';
 import Navigation from './components/Navigation';
 import './style.css';
-
+import Axios from 'axios';
 import Home from './components/Home';
 import Gardening from './components/Gardening';
 import Cooking from './components/Cooking';
@@ -15,14 +15,44 @@ import Register from './components/auth/Register';
 // import Recipie from './components/Recipie';
 import { BrowserRouter as Router, Switch, Route, BrowserRouter } from "react-router-dom";
 import Recipie from './components/Recipie';
+// import UserContext from './context/UserContext';
 
 function App() {
+
+  // const UserContext = UserContext();
+
+  // //updates currently logged in users data.
+  // const [userData, setUserData] = useState({
+  //   token: undefined,
+  //   user: undefined
+  // });
+
+  // useEffect(() => {
+  //   const checkLoggedIn = async () => {
+  //     let token = localStorage.getItem('auth-token');
+  //     if (token === null) {
+  //       localStorage.setItem("auth-token", "");
+  //       token = "";
+  //     }
+  //     const tokenRes = await Axios.post('http://localhost:3001/users/tokenIsValid', null, {headers: { 'x-auth-token': token }});
+
+  //     if (tokenRes.data) {
+  //       const userRes = await Axios.get('http://localhost:3001/users', {headers: { 'x-auth-token': token }});
+  //       setUserData({
+  //         token,
+  //         user: userRes.data,
+  //       })
+  //     }
+  //   }
+
+  //   checkLoggedIn();
+  // }, []);
   
   return (
     //BEM
     <BrowserRouter>
+    {/* <UserContext.Provider value={{userData, setUserData}}> */}
     <Router>
-     
       <div className="app">
         <div>
           <Navigation />
@@ -32,6 +62,12 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route path="/login">
+              <Login/>
+            </Route>
+            <Route path="/register">
+              <Register/>
             </Route>
             <Route path="/gardening">
               <Gardening />
@@ -51,16 +87,12 @@ function App() {
             <Route path="/contact">
               <Contact/>
             </Route>
-            <Route path="/login">
-              <Login/>
-            </Route>
-            <Route path="/register">
-              <Register/>
-            </Route>
+            
           </Switch>
         </div>
       </div>
     </Router>
+    {/* </UserContext.Provider> */}
     </BrowserRouter>
     
         );
