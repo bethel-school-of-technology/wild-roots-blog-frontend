@@ -27,10 +27,6 @@ const navLinks = [
         title: <Link to="/contact">Contact Us</Link>,
         path: '/contact'
     },
-    {
-        title: <Link to="/login">Login</Link>,
-        path: '/login'
-    },
 ];
 
 export default function Navigation () {

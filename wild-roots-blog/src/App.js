@@ -49,9 +49,6 @@ function App() {
             <Route path="/contact">
               <Contact/>
             </Route>
-            <Route path="/login">
-              <Login/>
-            </Route>
           </Switch>
         </div>
       </div>
