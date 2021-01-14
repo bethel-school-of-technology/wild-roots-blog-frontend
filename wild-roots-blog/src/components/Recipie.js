@@ -99,16 +99,13 @@ class Recipie extends React.Component {
                     <button
                         className="recipe__Button"
                         type="submit"
-                    >Submit
+                    >Share with Us!
             </button>
 
                 </form>
             </div>
         );
     }
-
-
-
 }
 
 export default Recipie
