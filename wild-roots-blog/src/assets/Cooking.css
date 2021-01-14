@@ -1,0 +1,55 @@
+.cooking > div {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.cooking > div > h1 {
+    color: #1a936f;
+    margin: 0;
+}
+
+.cooking__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooking__Header > h1 {
+    padding-left: 190px;
+    text-shadow: 3px 4px 0px rgba(171,202,94,0.74);
+}
+
+.cooking__Header > span {
+    padding-right: 20px;
+}
+
+.cooking__body {
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.cooking__cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 20px;
+}
+
+.cooking__card {
+    padding: 10px ;
+}
+
+.sendRecipieBtn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px 0px 0px;
+    /* text-decoration: none !important; */
+}
+
+.sendRecipieBtn > button {
+    text-decoration: none !important;
+}
