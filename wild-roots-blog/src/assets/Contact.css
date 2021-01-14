@@ -4,7 +4,7 @@ div contact-app {
     flex-flow: row wrap;
     justify-content: center;
 }
-
+/* rgb(182, 70, 18) */
 h1 {
     justify-content: center;
     color: rgb(182, 70, 18);
@@ -13,6 +13,7 @@ h1 {
 }
 
 label {
+    font-family: Copperplate, Papyrus, fantasy;
     font-size: x-large;
     color: rgb(2, 2, 71);
     font-style: inherit;
@@ -22,19 +23,17 @@ input {
     font-size: x-large;
     justify-content: space-evenly;
 }
-textarea {
-    font-size: x-large;
-    justify-content: space-evenly;
-}
 button {
+    font-family: Copperplate, Papyrus, fantasy;;
     font-size: large;
     font-weight: 400;
-    background-color: rgb(32, 105, 77);
+    background-color: rgb(58, 119, 34);
     color: white;
 }
 p {
     font-weight: bold;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 23px;
     color: rgb(175, 96, 68);
+    background-color: rgb(243, 233, 224);
 }
