@@ -1,5 +1,6 @@
 .scripture  {
-    background-color: gold
+    background-color: gold;
+    text-align: center;
 }
 .scripture__title {
     display: flex;
@@ -30,3 +31,13 @@
 h1 {
     padding: 20px;
     }
+
+.scriptureForm {
+    /* margin-left: 20%; */
+    font-size: 80% ;
+}    
+
+.scripture h2 {
+    margin: 20px;
+    
+}

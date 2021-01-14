@@ -1,5 +1,10 @@
-home {
-    background-color: yellowgreen;
-    color: blueviolet;
-    
-}
+.div {
+    background-color: gold;
+};
+
+
+/* h2 {
+    display: flex;
+    text-align: center;
+    color: rgb(175, 96, 68);
+} */
