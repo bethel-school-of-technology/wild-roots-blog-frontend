@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import './App.css';
-import Navigation from './components/Navigation';
+import Navigation from './components/navigation';
 import './style.css';
 import Axios from 'axios';
 import Home from './components/Home';
