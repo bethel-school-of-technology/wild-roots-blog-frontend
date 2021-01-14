@@ -57,20 +57,6 @@ export const useStyles = makeStyles((theme) => ({
     },
   }));
 
-//   const useStyles2 = makeStyles((theme) => ({
-//     palette: {
-//         primary: {
-//           main: A100['#a7ffeb'],
-//         },
-//         secondary: {
-//           main: '#f44336',
-//         },
-//       },
-//     }));
-
-
-
-
 function Cooking() {
     const classes = useStyles();
     // const button = useStyles2()
