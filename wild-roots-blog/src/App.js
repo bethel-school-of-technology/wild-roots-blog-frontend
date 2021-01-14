@@ -1,5 +1,4 @@
-import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState, useEffect} from 'react';
 import './App.css';
 import Navigation from './components/Navigation';
 
@@ -19,6 +18,7 @@ import {
 import Recipie from './components/Recipie';
 
 function App() {
+  
   return (
     //BEM
     <Router>
