@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+      color: #2767b1;
+      text-decoration: unset;
+  }
+
+  ul {
+      margin-left: 1.5rem;
+      list-style: none;
+  }
+
+  button, 
+  input[type='submit'] {
+      border: none;
+      background: none;
+      color: unset;
+      cursor: pointer;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 1em 0;
+  }
+
+  /* Header */
+
+  #header {
+      height: 70px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: lightblue;
+      display: flex;
+  }
+
+  #header .title {
+      margin: 0;
+      color: rgb(6, 85, 23);
+      padding: 0 1rem;
+      display: flex;
+  }
+
+  body {
+      font-family: "Robotp", sans-serif;
+  }
+
+  #header .auth-options {
+      height: 100%;
+      display: flex;
+  }
+
+  
+  #header .auth-options button {
+    padding: 0 1rem;
+    background-color: rgb(50, 127, 158);
+    font-size: 1.1rem;
+  }
+
+  #header .auth-options button:hover {
+    background-color: rgb(178, 217, 233);
+  }
+
+  @media screen and (max-width: 550px) {
+    #header .title {
+        font-size: 1.2rem;
+    }
+    #header .auth-options button {
+        font-size: 0.8rem;
+        padding: 0 0.5rem;
+    }
+  
+  }
+
+  .home {
+      padding: 0 1rem;
+  }
+ 
