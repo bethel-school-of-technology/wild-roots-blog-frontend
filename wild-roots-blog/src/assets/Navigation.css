@@ -6,6 +6,10 @@
     height: 200px;
     
 }
+.words {
+    color:#42EADDFF;  /* fallback for old browsers */
+    
+}
 
 #dots {
     list-style-type: none;
