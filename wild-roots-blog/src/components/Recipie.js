@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
 
 import '../assets/Recipie.css';
@@ -12,12 +12,8 @@ class Recipie extends React.Component {
             recipieName: '',
             description: '',
         }
-        // this.onNameChange = this.onNameChange.bind(this)
-        // this.onEmailChange = this.onEmailChange.bind(this)
-        // this.onRecipieChange = this.onRecipieChange.bind(this)
-        // this.onDescriptionChange = this.onDescriptionChange.bind(this)
     }
-
+    
     onNameChange(event) {
         this.setState({ firstName: event.target.value })
     }
@@ -30,7 +26,7 @@ class Recipie extends React.Component {
     onDescriptionChange(event) {
         this.setState({ description: event.target.value })
     }
-
+    
     handleSubmit(e) {
         e.preventDefault();
         console.log(this.state)
@@ -51,33 +47,34 @@ class Recipie extends React.Component {
     resetForm() {
         this.setState({ firstName: '', email: '', recipieName: '', description: '' })
     }
-
+    
     render() {
         return (
-            <div className="recipie">
-                <form id="form__contact" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                    <div className="form-group">
+        
+            <div className="form__recipie">
+                <form className="form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                    <div className="form__group">
                         <input
-                            className="form-control"
+                            className="form__input"
                             type="text"
                             value={this.state.firstName}
                             onChange={this.onNameChange.bind(this)}
                             placeholder="FirstName"
-                        />
-                    </div><br />
-                    <div className="form-group">
+                            />
+                    </div><br/>
+                    <div className="form__group">
                         <input
-                            className="form-control"
+                            className="form__input"
                             type="email"
                             value={this.state.email}
                             onChange={this.onEmailChange.bind(this)}
                             placeholder="Email"
-                        />
+                            />
                     </div>
-                    <br></br>
-                    <div className="form-group">
+                    <br/>
+                    <div className="form__group">
                         <input
-                            className="form-control"
+                            className="form__input"
                             type="text"
                             aria-describedby="recipie"
                             value={this.state.recipieName}
@@ -85,30 +82,29 @@ class Recipie extends React.Component {
                             placeholder="Recipie Name"
                         />
                     </div>
-                    <br></br>
-                    <div className="form-group">
+                    <br/>
+                    <div className="form__group">
                         <textarea
-                            className="form-control"
+                            className="form__textArea"
                             rows="5"
                             value={this.state.description}
                             onChange={this.onDescriptionChange.bind(this)}
                             placeholder="What's meaningful about this recipie for you?"
                         />
                     </div>
-                    <br></br>
-                    <button
-                        className="recipe__Button"
+                    <br/>
+                    <div className="form__group">
+                        <button
+                        className="form__button"
                         type="submit"
-                    >Submit
-            </button>
-
+                        >Click to Share with Us!
+                        </button>
+                    </div>
                 </form>
             </div>
+        
         );
     }
-
-
-
 }
 
 export default Recipie
@@ -116,8 +112,12 @@ export default Recipie
 
 
 
+////// coding graveyard /////////
 
-
+// this.onNameChange = this.onNameChange.bind(this)
+// this.onEmailChange = this.onEmailChange.bind(this)
+// this.onRecipieChange = this.onRecipieChange.bind(this)
+// this.onDescriptionChange = this.onDescriptionChange.bind(this)
 
 // import React, { useState, useEffect } from 'react';
 // // import { useForm , Controller } from 'react-hook-form';

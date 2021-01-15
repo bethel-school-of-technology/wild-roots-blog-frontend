@@ -1,41 +1,48 @@
-.recipie {
-
+.form__recipie {
     display: flex;
     justify-content: center;
-    margin: 20px;
-    padding: 20px;
-    /* align-items: center; */
-    /* background-color: whitesmoke; */
-}
-
-#form__contact {
-    position: absolute;
-}
-
-
-.recipie > h1 {
-    color: gray;
-}
-
-.recipie__form {
     background-color: white;
     margin: 20px;
     padding: 20px;
 }
 
-.recipie__form > form {
-    display: grid;
-}
-
-.recipe__Button {
-    position: relative;
-    top: 0;
+.form {
     display: flex;
-    justify-content: center;
-    border-radius: 5px;
+    flex-direction: column;
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ADEFD1FF, #ADEFD1FF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ADEFD1FF,#ADEFD1FF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 20px;
+    box-shadow: -4px 6px 7px 7px #42698a;
+    -webkit-box-shadow: -4px 6px 7px 7px #42698a;
+    -moz-box-shadow: -4px 6px 7px 7px #42698a;
+    padding: 20px;
 }
 
-.form-control {
+.form__group {
+    display: flex;
+}
+
+.form__input {
     border-radius: 10px;
-    border: 2px solid green;
+    border: 2px solid #e1eec3;
+}
+
+.form__textArea {
+    /* display: flex;
+    justify-content: center; */
+    border-radius: 10px;
+    border: 2px solid #e1eec3;
+    width: 320px;
+    font-size: 20px;
+}
+
+.form__button {
+    background-color: #64ffda;
+    color: black;
+    border: 2px solid #355C7D;
+    border-radius: 20px;
+    mask-border-outset: hidden;
+    width: 325px;
 }
