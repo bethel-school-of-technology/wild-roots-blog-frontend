@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import './App.css';
 import Navigation from './components/Navigation';
 import './style.css';
-import Axios from 'axios';
+// import Axios from 'axios';
 import Home from './components/Home';
 import Gardening from './components/Gardening';
 import Cooking from './components/Cooking';
@@ -12,14 +12,14 @@ import Contact from './components/Contact';
 import Header from './components/layout/Header';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-// import Recipie from './components/Recipie';
+// import AuthOptions from './components/auth/AuthOptions';
 import { BrowserRouter as Router, Switch, Route, BrowserRouter } from "react-router-dom";
 import Recipie from './components/Recipie';
 // import UserContext from './context/UserContext';
 
 function App() {
 
-  // const UserContext = UserContext();
+  // const UserContext = createContext();
 
   // //updates currently logged in users data.
   // const [userData, setUserData] = useState({
@@ -27,6 +27,7 @@ function App() {
   //   user: undefined
   // });
 
+  //useEffect only runs once when app starts since there are no dependencies
   // useEffect(() => {
   //   const checkLoggedIn = async () => {
   //     let token = localStorage.getItem('auth-token');
@@ -35,15 +36,16 @@ function App() {
   //       token = "";
   //     }
   //     const tokenRes = await Axios.post('http://localhost:3001/users/tokenIsValid', null, {headers: { 'x-auth-token': token }});
+  //     console.log(tokenRes.data);
 
   //     if (tokenRes.data) {
-  //       const userRes = await Axios.get('http://localhost:3001/users', {headers: { 'x-auth-token': token }});
+  //       const userRes = await Axios.get('http://localhost:3001/users', {headers: { 'x-auth-token': token },});
   //       setUserData({
   //         token,
   //         user: userRes.data,
-  //       })
+  //       });
   //     }
-  //   }
+  //   };
 
   //   checkLoggedIn();
   // }, []);
@@ -51,13 +53,14 @@ function App() {
   return (
     //BEM
     <BrowserRouter>
-    {/* <UserContext.Provider value={{userData, setUserData}}> */}
+  
     <Router>
       <div className="app">
         <div>
           <Navigation />
         </div>
         <div className="app__body">
+        {/* <UserContext.Provider value={{ userData, setUserData }}> */}
           <Header />
           <Switch>
             <Route exact path="/">
@@ -89,10 +92,11 @@ function App() {
             </Route>
             
           </Switch>
+          {/* </UserContext.Provider> */}
         </div>
       </div>
     </Router>
-    {/* </UserContext.Provider> */}
+   
     </BrowserRouter>
     
         );

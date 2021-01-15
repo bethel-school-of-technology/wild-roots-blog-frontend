@@ -1,12 +1,12 @@
-// import React from 'react';
-// import '../assets/Login.css';
+import React from 'react';
+import '../assets/Login.css';
 
-// function Login() {
-//     return (
-//         <div className="login">
-//             <h1>Login page</h1>
-//         </div>
-//     )
-// }
+function Login() {
+    return (
+        <div className="login">
+            <h1>Login page</h1>
+        </div>
+    )
+}
 
-// export default Login
+export default Login
