@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import './App.css';
 import Navigation from './components/Navigation';
 
@@ -9,13 +9,13 @@ import LocalBusiness from './components/LocalBusiness';
 import Scripture from './components/Scripture';
 import Contact from './components/Contact';
 import Login from './components/Login';
-// import Recipie from './components/Recipie';
+import Recipie from './components/Recipie';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
-import Recipie from './components/Recipie';
+// import Recipie from './components/Recipie';
 
 function App() {
   

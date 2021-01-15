@@ -9,7 +9,7 @@
  
 }
 .scripture-card {
-    background-color: green;
+    background-color : green !important;
     color: black;
     width: 250px;
     padding: 20px;
@@ -17,10 +17,13 @@
 }
 
 .scripture-card > p {
-    color: white;
+    background-color:green;
+    color: white !important;
+    border-radius: 20px;
 }
 
 .cards-container {
+        
     display: flex;
     text-align: center;
     justify-content: center;

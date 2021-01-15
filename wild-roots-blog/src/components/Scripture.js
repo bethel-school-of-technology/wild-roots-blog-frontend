@@ -13,18 +13,16 @@ function Scripture() {
         const getScripture = async () => {
             const {data}=await axios.get("http://localhost:3001/scripture")
             
-            console.log(data.data.results)
-            setVerses(data.data.results)
+                setVerses(data.data.results)
             
         }
         getScripture()
 
-    },[])  
+    },[verses])  
     
     const handleClick= async() => {
-        console.log({reference, verse})
-        const {data}=await axios.post("http://localhost:3001/scripture/add",{reference, verse}) 
-        console.log(data,"new scripture added")   
+        await axios.post("http://localhost:3001/scripture/add",{reference, verse}) 
+         
     }
 
     return (
@@ -64,7 +62,7 @@ function Scripture() {
                     />
                     </Col>
                 </Form.Group>
-                <Button onClick={handleClick}>Add</Button>
+                <Button className="pt-3" onClick={handleClick}>Add</Button>
             </Form>
         </div>
     )
