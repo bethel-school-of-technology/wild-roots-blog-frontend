@@ -12,9 +12,9 @@ import Contact from './components/Contact';
 import Header from './components/layout/Header';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-// import Recipie from './components/Recipie';
-import { BrowserRouter as Router, Switch, Route, BrowserRouter } from "react-router-dom";
 import Recipie from './components/Recipie';
+
+import { BrowserRouter as Router, Switch, Route, BrowserRouter } from "react-router-dom";
 // import UserContext from './context/UserContext';
 
 function App() {

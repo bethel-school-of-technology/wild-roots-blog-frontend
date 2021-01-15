@@ -4,27 +4,27 @@ import { Link } from 'react-router-dom';
 
 const navLinks = [
     {
-        title: <Link to="/">Home</Link>,
+        title: <Link to="/" className="words">Home</Link>,
         path: '/'
     },
     {
-        title: <Link to="/gardening">Gardening</Link>,
+        title: <Link to="/gardening" className="words">Gardening</Link>,
         path: '/gardening'
     },
     {
-        title: <Link to="/cooking">Cooking</Link>,
+        title: <Link to="/cooking" className="words">Cooking</Link>,
         path: '/cooking'
     },
     {
-        title: <Link to="/local-business">Local Business</Link>,
+        title: <Link to="/local-business" className="words">Local Business</Link>,
         path: '/local-business'
     },
     {
-        title: <Link to="/scripture">Scripture</Link>,
+        title: <Link to="/scripture" className="words">Scripture</Link>,
         path: '/scripture'
     },
     {
-        title: <Link to="/contact">Contact Us</Link>,
+        title: <Link to="/contact" className="words">Contact Us</Link>,
         path: '/contact'
     },
 ];
