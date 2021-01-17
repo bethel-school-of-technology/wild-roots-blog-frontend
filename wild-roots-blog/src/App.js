@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import './App.css';
-import Navigation from './components/Navigation';
+import Navigation from './components/navigation';
 import './style.css';
-// import Axios from 'axios';
+import Axios from 'axios';
 import Home from './components/Home';
 import Gardening from './components/Gardening';
 import Cooking from './components/Cooking';
@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 import Header from './components/layout/Header';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-// import AuthOptions from './components/auth/AuthOptions';
+import AuthOptions from './components/auth/AuthOptions'
 import { BrowserRouter as Router, Switch, Route, BrowserRouter } from "react-router-dom";
 import Recipie from './components/Recipie';
 // import UserContext from './context/UserContext';
