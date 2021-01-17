@@ -1,20 +1,40 @@
+<<<<<<< HEAD
 import React, { useState, useEffect} from 'react';
 import './App.css';
 import Navigation from './components/navigation';
 import './style.css';
 import Axios from 'axios';
+=======
+import React from 'react';
+import Navigation from './components/navigation';
+// import Axios from 'axios';
+>>>>>>> 07018378c0121824a5eed63c4d8753a63f924137
 import Home from './components/Home';
 import Gardening from './components/Gardening';
 import Cooking from './components/Cooking';
 import LocalBusiness from './components/LocalBusiness';
 import Scripture from './components/Scripture';
 import Contact from './components/Contact';
+import Recipie from './components/Recipie';
 import Header from './components/layout/Header';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
+<<<<<<< HEAD
 import AuthOptions from './components/auth/AuthOptions'
 import { BrowserRouter as Router, Switch, Route, BrowserRouter } from "react-router-dom";
 import Recipie from './components/Recipie';
+=======
+import './App.css';
+import './style.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+// import Recipie from './components/Recipie';
+
+
+>>>>>>> 07018378c0121824a5eed63c4d8753a63f924137
 // import UserContext from './context/UserContext';
 
 function App() {
@@ -52,8 +72,13 @@ function App() {
   
   return (
     //BEM
+<<<<<<< HEAD
     <BrowserRouter>
   
+=======
+    <Router>
+    {/* <UserContext.Provider value={{userData, setUserData}}> */}
+>>>>>>> 07018378c0121824a5eed63c4d8753a63f924137
     <Router>
       <div className="app">
         <div>
@@ -90,14 +115,18 @@ function App() {
             <Route path="/contact">
               <Contact/>
             </Route>
-            
           </Switch>
           {/* </UserContext.Provider> */}
         </div>
       </div>
     </Router>
+<<<<<<< HEAD
    
     </BrowserRouter>
+=======
+    {/* </UserContext.Provider> */}
+    </Router>
+>>>>>>> 07018378c0121824a5eed63c4d8753a63f924137
     
         );
 }
